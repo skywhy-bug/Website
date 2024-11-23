@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(to right, #ff7eb3, #ffc3a0);
+    
+}
+
+header {
+    background:linear-gradient(to right, #ff7eb3, #ffc3a0);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-family: 'MyCustomFont', sans-serif; /* Используйте ваш шрифт */
+    font-size: 30px; /* Установите размер текста в пикселях */
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #ca36a5;
+}
+
+.photo-gallery, .video-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.photo-gallery img, .video-gallery video {
+    max-width: 30%;
+    border: 2px solid #ff4d91;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #8c34ff;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@font-face {
+    font-family: 'MyCustomFont'; /* Название шрифта */
+    src: url('font/Garamond-Italic - Garamond - Italic.ttf') format('woff2'), /* Укажите путь и формат шрифта */
+         url('font/Garamond-BoldItalic-04.ttf') format('truetype');
+    font-weight: normal; /* Нормальный вес шрифта */
+    font-style: normal; /* Нормальный стиль шрифта */
+}
